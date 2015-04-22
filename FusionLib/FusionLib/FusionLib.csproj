@@ -46,7 +46,9 @@
     <Compile Include="Collision\CollisionManager.cs" />
     <Compile Include="Collision\ICollidable.cs" />
     <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shapes\CollidableRectangle.cs" />
     <Compile Include="Utils\GameServices.cs" />
     <Compile Include="Utils\Performance.cs" />
   </ItemGroup>
