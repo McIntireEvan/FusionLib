@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FusionLib.Shapes
 {
-    class Triangle
+    public class Triangle
     {
     }
 }
