@@ -49,9 +49,13 @@
     <Compile Include="Entities\Player.cs" />
     <Compile Include="Keybinds\Keybinder.cs" />
     <Compile Include="Keybinds\KeybindMeta.cs" />
+    <Compile Include="Lighting\LightingEngine.cs" />
+    <Compile Include="Lighting\LightSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shapes\CollidableRectangle.cs" />
+    <Compile Include="Shapes\Line.cs" />
     <Compile Include="Shapes\Triangle.cs" />
+    <Compile Include="Utils\ClockSort.cs" />
     <Compile Include="Utils\GameServices.cs" />
     <Compile Include="Utils\GraphicsUtils.cs" />
     <Compile Include="Utils\Performance.cs" />

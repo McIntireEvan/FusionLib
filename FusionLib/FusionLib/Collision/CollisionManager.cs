@@ -91,6 +91,6 @@ namespace FusionLib.Collision
             return currentDistance > 0 ? minDistance - currentDistance : -minDistance - currentDistance;
         }
 
-        enum CollisionType { VERTICAL, HORIZONTAL};
+        public enum CollisionType { VERTICAL, HORIZONTAL};
     }
 }

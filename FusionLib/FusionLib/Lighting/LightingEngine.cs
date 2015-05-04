@@ -1,10 +1,7 @@
 ﻿using FusionLib.Entities;
 using Microsoft.Xna.Framework;
-using System;
+using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FusionLib.Lighting
 {
@@ -28,6 +25,31 @@ namespace FusionLib.Lighting
         public void AddDynamicLight(Entity p, int radius)
         {
             dynamicLights.Add(new LightSource(p.GetHitbox().Center, radius), p);
+        }
+
+        public void Draw()
+        {
+            foreach (LightSource l in dynamicLights.Keys)
+            {
+                l.Draw();
+            }
+            foreach (LightSource l in staticLights)
+            {
+                l.Draw();
+            }
+        }
+
+        //Returns the Stencil to render with. Might need changing in the future
+        public static DepthStencilState getStencil()
+        {
+            return new DepthStencilState
+            {
+                StencilEnable = true,
+                StencilFunction = CompareFunction.Always,
+                StencilPass = StencilOperation.Replace,
+                ReferenceStencil = 1,
+                DepthBufferEnable = false
+            };
         }
     }
 }
