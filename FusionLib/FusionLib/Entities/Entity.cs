@@ -23,13 +23,21 @@ namespace FusionLib.Entities
             this.hitbox = hitbox;
         }
 
-        public virtual void OnCollision(ICollidable other) { }
+        public virtual void OnCollision(ICollidable other)
+        {
+        }
+
         public virtual Rectangle GetHitbox()
         {
             return this.hitbox;
         }
 
-        public virtual void Update(GameTime gameTime) { }
-        public virtual void Draw(GameTime gameTime) { }
+        public virtual void Update(GameTime gameTime)
+        {
+        }
+
+        public virtual void Draw(GameTime gameTime)
+        {
+        }
     }
 }

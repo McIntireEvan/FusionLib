@@ -83,7 +83,6 @@ namespace FusionLib.Shapes
             float t2 = (rx * (line.GetStart().Y - this.GetStart().Y) + ry * (this.GetStart().X - line.GetStart().X)) / (lx * ry - ly * rx);
             float t1 = (line.GetStart().X + lx * t2 - this.GetStart().X) / rx;
 
-
             if (!(t1 > 0)) return null;
             if (!(t2 > 0 && t2 < 1)) return null;
 

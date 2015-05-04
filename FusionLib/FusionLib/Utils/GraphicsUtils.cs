@@ -6,6 +6,7 @@ namespace FusionLib.Utils
     {
         public static void Screenshot(String path)
         {
+            throw new NotImplementedException();
         }
     }
 }

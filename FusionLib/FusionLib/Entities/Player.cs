@@ -15,7 +15,6 @@ namespace FusionLib.Entities
 
         public virtual void Update(GameTime gameTime)
         {
-
         }
 
         public virtual void Draw(SpriteBatch spriteBatch)

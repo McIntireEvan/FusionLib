@@ -8,6 +8,7 @@ namespace FusionLib.Utils
     public static class GameServices
     {
         private static GameServiceContainer container;
+
         public static GameServiceContainer Instance
         {
             get

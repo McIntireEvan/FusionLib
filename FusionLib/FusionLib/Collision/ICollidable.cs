@@ -8,6 +8,7 @@ namespace FusionLib.Collision
     public interface ICollidable
     {
         void OnCollision(ICollidable other);
+
         Rectangle GetHitbox();
     }
 }

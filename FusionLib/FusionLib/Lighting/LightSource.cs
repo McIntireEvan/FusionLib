@@ -11,15 +11,15 @@ namespace FusionLib.Lighting
         protected Vector2 pos;
         protected int radius;
 
-        List<VertexPositionColor> verticies;
-        List<VertexPositionColor> offsetVerticies;
+        protected List<VertexPositionColor> verticies;
+        protected List<VertexPositionColor> offsetVerticies;
 
-        Vector2 screenCenter;
+        protected Vector2 screenCenter;
 
-        BasicEffect basicEffect;
-        Matrix world = Matrix.CreateTranslation(0, 0, 0);
-        Matrix view;
-        Matrix projection;
+        protected BasicEffect basicEffect;
+        protected Matrix world = Matrix.CreateTranslation(0, 0, 0);
+        protected Matrix view;
+        protected Matrix projection;
 
         protected List<Line> lightRays;
 
@@ -28,12 +28,11 @@ namespace FusionLib.Lighting
             this.pos = pos;
             this.radius = radius;
 
-
             verticies = new List<VertexPositionColor>();
             offsetVerticies = new List<VertexPositionColor>();
             basicEffect = new BasicEffect(GameServices.GetService<GraphicsDevice>());
 
-            screenCenter = new Vector2(GameServices.GetService<GraphicsDeviceManager>().PreferredBackBufferWidth * .5f, 
+            screenCenter = new Vector2(GameServices.GetService<GraphicsDeviceManager>().PreferredBackBufferWidth * .5f,
                                        GameServices.GetService<GraphicsDeviceManager>().PreferredBackBufferHeight * .5f);
             view = Matrix.CreateLookAt(new Vector3(screenCenter, 0), new Vector3(screenCenter, 1), new Vector3(0, -1, 0));
 
