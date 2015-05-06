@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Collision\CollisionManager.cs" />
     <Compile Include="Collision\ICollidable.cs" />
+    <Compile Include="Entities\AnimatedSprite.cs" />
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Player.cs" />
     <Compile Include="Keybinds\Keybinder.cs" />
